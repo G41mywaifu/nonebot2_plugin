@@ -5,7 +5,7 @@
 
 项目原地址：  
 5k：https://github.com/pcrbot/5000choyen  
-无中生友：https://github.com/pcrbot/cappuccilo_plugins/tree/master/generator  
+无中生友 搜番：https://github.com/pcrbot/cappuccilo_plugins    
 塔罗牌：https://github.com/haha114514/tarot_hoshino  
 在env文件中加入  
 RES_DIR=""  
