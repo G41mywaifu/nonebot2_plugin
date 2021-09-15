@@ -1,4 +1,5 @@
-# nonebotin2-plug
+# nonebotin2-plug  
+修改部分hoshino的插件，使他能在nonebot2中运行  
 将py文件夹下的文件放于src同目录  
 改的很烂，能用就行  
 
