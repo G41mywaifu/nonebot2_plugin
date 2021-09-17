@@ -1,0 +1,21 @@
+{
+    "upstream": "https://pcresource.coldthunder11.com/rank/",
+    "resize_pic": false,
+    "source": {
+        "cn": {
+            "name": "席巴鸽",
+            "channel": "stable",
+            "route": "cn/xbg"
+        },
+        "tw": {
+            "name": "无羽",
+            "channel": "stable",
+            "route": "tw/wy"
+        },
+        "jp": {
+            "name": "森佬",
+            "channel": "stable",
+            "route": "jp/sl"
+        }
+    }
+}
