@@ -7,11 +7,12 @@
 5k：https://github.com/pcrbot/5000choyen  
 无中生友 搜番：https://github.com/pcrbot/cappuccilo_plugins    
 塔罗牌：https://github.com/haha114514/tarot_hoshino  
+rank表：https://github.com/pcrbot/pcr-rank  
 在env文件中加入  
 RES_DIR=""  
 CACHE_DIR=""  
 如  
 RES_DIR="C:\Resources/"  
 CACHE_DIR="C:\cache/"  
-在RES_DIR文件夹中创建img文件夹，将card中的asset文件夹放入img中
-
+在RES_DIR文件夹中创建img文件夹，将card中的asset文件夹放入img中  
+使用rank表时，需要将RES_DIR设置为pcr-rank的路径  也可以自行修改  
