@@ -1,3 +1,13 @@
+网页截图  
+没有在LINUX中测试过
+安装依赖selenium
+在服务器中安装chrome浏览器和chromedriver，需要相同版本
+将14行的chromedriver改为你的chromedriver的路径
+45行C:\nb2\mimibot\src\plugins\pcr-rank\img\imgs中的C:\nb2\mimibot\src\plugins\pcr-rank\img改为你RES_DIR的路径
+效果如图  
+![图片](https://user-images.githubusercontent.com/81564864/134751761-2df7eb04-efa0-4327-8cba-4f6cb593e968.png)  
+
+
 # nonebotin2-plug  
 修改部分hoshino的插件，使他能在nonebot2中运行  
 将py文件夹下的文件放于src路径下  
