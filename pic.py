@@ -9,41 +9,46 @@ from nonebot.exception import ActionFailed
 from nonebot.plugin import on_command,on_regex
 from nonebot.typing import T_State
 from nonebot.adapters.cqhttp.message import MessageSegment
-from src import R
+
 
 pic=on_regex('^截图(.*)$')
 
+
 def webshot(url,saveImgName):
     options = webdriver.ChromeOptions()
-   
+    options.add_argument('--headless')
+    options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')
-    options.add_argument('--disable-software-rasterizer')
-    
     chromedriver = r"C:\Users\Administrator\AppData\Local\Google\Chrome\Application\chromedriver.exe"
     driver = webdriver.Chrome(options=options,executable_path =chromedriver)
     driver.maximize_window()
-    
     js_height = "return document.body.clientHeight"
     picname = saveImgName
     link = url 
-    
     try:
         driver.get(link)
         k = 1
         height = driver.execute_script(js_height)
-       
+        while True:
+            if k * 500 < height:
+                js_move = "window.scrollTo(0,{})".format(k * 500)
+                print(js_move)
+                driver.execute_script(js_move)
+                time.sleep(0.2)
+                height = driver.execute_script(js_height)
+                k += 1
+            else:
+                break
         scroll_width = driver.execute_script('return document.body.parentNode.scrollWidth')
         scroll_height = driver.execute_script('return document.body.parentNode.scrollHeight')
         driver.set_window_size(scroll_width, scroll_height)
         driver.get_screenshot_as_file(picname + ".png")
         
-        print("Process {} get one pic !!!".format(os.getpid()))
-        time.sleep(0.1)
         return True
-    except:
-
+    except Exception as e:
         return False
- 
+       
+       
 @pic.handle()
 async def pic(bot: Bot, event: Event, state: T_State):
     path=state["_matched_groups"]
@@ -52,6 +57,8 @@ async def pic(bot: Bot, event: Event, state: T_State):
         path='http://'+path
     ss=webshot(path,'C:\\nb2\\mimibot\\src\\plugins\\pcr-rank\\img\\imgs')
     if ss==True:
-        await bot.send(event,R.img('imgs.png').cqcode)
+        
+        await bot.send(event, MessageSegment.image('file:///C:\\nb2\\mimibot\\src\\plugins\\pcr-rank\\img\\imgs.png'))
     else:
-        await bot.send(event,'获取失败，呜呜呜，可能是因为地址错误或链接超时')
+        await bot.send(event,'获取失败 呜呜呜')
+    
