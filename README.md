@@ -25,4 +25,4 @@ CACHE_DIR=""
 RES_DIR="C:\Resources/"  
 CACHE_DIR="C:\cache/"  
 在RES_DIR文件夹中创建img文件夹，将card中的asset文件夹放入img中  
-使用rank表时，需要将RES_DIR设置为pcr-rank的路径  也可以自行修改  
+
