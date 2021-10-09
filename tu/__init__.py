@@ -27,10 +27,10 @@ getimg=on_command('图库')
 delimg=on_command('del',permission=SUPERUSER,priority=1,block=True)
 setu=on_message(priority=6)
 helptu=on_command('偷图帮助')
-cache = 'C:\\mirai/'  #你go-cqhttp.exe的文件夹 例如我的go-cqhttp.exe放在C:/go-cqhttp/这个文件夹里,那么这里就填C:/go-cqhttp/
-APP_ID = '24909037' #你的AppID
-API_KEY = 'dp3pk4rXbiluBWqL902eOg9L'#你的API Key
-SECRET_KEY = '7gPp6wlZXcMwpmT9NzvsZlg2GeQgcQZc'#你的Secret Key
+cache = 'C:\\mirai/'  #你go-cqhttp.exe的文件夹
+APP_ID = '' #你的AppID
+API_KEY = ''#你的API Key
+SECRET_KEY = ''#你的Secret Key
 client = AipContentCensor(APP_ID, API_KEY, SECRET_KEY)
 
 def get_file_content(filePath):
