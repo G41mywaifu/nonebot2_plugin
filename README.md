@@ -7,7 +7,8 @@
 效果如图   
 ![图片](https://user-images.githubusercontent.com/81564864/134751761-2df7eb04-efa0-4327-8cba-4f6cb593e968.png)  
 
-
+查成分 这个b到底关注了多少V  
+查成分+b站uid  
  
 修改部分hoshino的插件，使他能在nonebot2中运行  
 将py文件夹下的文件放于src路径下  
