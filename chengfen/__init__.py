@@ -34,11 +34,11 @@ async def chengfen(bot: Bot, event: Event):
             for i in vtb:
                 
                 
-                if str(ids) == i['accounts'][0]['id']:
-                    
-                    ww=i['name']['default']
-                    msg+=i['name'][ww]+', '
-                    a+=1
+               for ac in i['accounts']:
+                    if str(ids) ==  ac['id']:
+                        ww=i['name']['default']
+                        msg+=i['name'][ww]+', '
+                        a+=1
         await bot.send(event, Message.template('{n1}(uid{n5}){n2}关注的vtb有{n3}个:{n4}').format(n1=f'{name}',n2=f'{face}',n3=f'{a}',n4=f'{msg}',n5=f'{mid}'))
         
     except:
