@@ -10,7 +10,7 @@
 查成分 这个b到底关注了多少V  
 查成分+b站uid  
  ![图片](https://user-images.githubusercontent.com/81564864/136749812-00f0c282-735a-4926-a711-71af59096ebe.png)  
-[数据来源](https://vtbs.moe)    
+[数据来源vtbs.moe](https://vtbs.moe)    
 
 偷图  
 当检测到有图片发出  将对图片进行打分  并存到指定文件夹  发送  图库 随机提取一张图片  发送del+已有图片  删除此图并拉黑
