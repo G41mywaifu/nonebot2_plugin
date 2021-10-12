@@ -6,11 +6,7 @@
 45行C:\nb2\mimibot\src\plugins\pcr-rank\img\imgs中的C:\nb2\mimibot\src\plugins\pcr-rank\img改为你RES_DIR的路径  
 效果如图   
 ![图片](https://user-images.githubusercontent.com/81564864/134751761-2df7eb04-efa0-4327-8cba-4f6cb593e968.png)  
-
-查成分 这个b到底关注了多少V  
-查成分+b站uid  
- ![图片](https://user-images.githubusercontent.com/81564864/136749812-00f0c282-735a-4926-a711-71af59096ebe.png)  
-[数据来源vtbs.moe](https://vtbs.moe)    
+   
 
 偷图  
 当检测到有图片发出  将对图片进行打分  并存到指定文件夹  发送  图库 随机提取一张图片  发送del+已有图片  删除此图并拉黑
